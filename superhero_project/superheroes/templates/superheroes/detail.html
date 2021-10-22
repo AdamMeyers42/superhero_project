@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super Details</title>
+    <title>Superhero Details</title>
 </head>
+
 <body>
     <h1>Hero</h1>
-    <ul>
-        {% for hero in single_hero%}
-        <li> <h2>{{hero.name}}</h2> </li>
-        {% endfor %}
-    </ul>   
-    
+    <h2>{{single_hero.name}}</h2>
+
+    <p>Alter Ego: {{single_hero.alter_ego}}</p>
+    <p>Primary Ability: {{single_hero.primary_ability}}</p>
+    <p>Secondary Ability: {{single_hero.secondary_ability}}</p>
+    <p>Catch Phrase: {{single_hero.catch_phrase}}</p>
 </body>
+
 </html>
